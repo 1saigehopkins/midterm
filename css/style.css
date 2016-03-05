@@ -3,14 +3,220 @@
 @import url('html5reset.css');
 
 /* standard css for desktop browsers */
+
+/*-----------------------------------style to affect all site sections----------------*/
 body {
-	background-color:gainsboro;
+	background-color:rgba(0, 230, 172, .5);
+	margin:50px;
 }
 
-/* override css for mobile browsers */
+div {
+	/*  height:285px;
+	  background-position: center;
+	  padding:10px;
+	  margin: 25px;
+ */
+}
+
+/*----------------------------------1st section-- zen intro--------------------------*/
+
+.intro {
+	border: 4px solid black;
+}
+
+div .intro a {
+ text-decoration: none;
+}
+
+div .intro a:link {/*: An unvisited link.*/
+	color: 	pink;
+	}
+
+div .intro a:visited { /*A visited link.*/
+	color: green;
+}
+
+div .intro a:hover {/*A link you're hovering your mouse over.*/
+	font-family: cursive;
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+section header { /*cornflower blue; CSS Zen Garden*/
+  background-color:rgba(129, 129, 228, .25);
+	/*background-image:url(http://cdn.makeagif.com/media/2-19-2016/jy3coR.gif)*/;
+	background-position: center;
+  /*float: right;
+  margin-top: 175px;*/
+}
+
+div .summary {  /*grey shadow and burnt red*/
+  /*height: 50px;
+	width: 500px;
+  margin-left: 25px;*/
+  font-size: 1.2em;
+  color: #9d4828;
+  text-shadow: 3px 2px #a8aeac;
+	font-style: italic;
+	font-family: monospace;
+	border: 4px solid green;
+}
+
+div .preamble {
+  color: rgb(228, 228, 129);/*yellow*/
+}
+
+
+/*---------------------------------second section-- main supporting-----------------*/
+
+div #zen-supporting {
+	background-color: rgba(64, 0, 128, .4);
+	padding:10px;
+	margin: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+div #zen-supporting a {
+ text-decoration: none;
+}
+
+div #zen-supporting a:link {
+	color: 	rgb(115, 153, 0);/*green*/
+	}/*: An unvisited link.*/
+
+div #zen-supporting a:visited { /*A visited link.*/
+	color: 	rgb(153, 0, 153); /*pink*/
+}
+
+div #zen-supporting a:hover {/*A link you're hovering your mouse over.*/
+	font-family: cursive;
+	color: 	rgb(153, 77, 0); /*burnt orange*/
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div .explanation {
+	border: 4px dotted pink;
+	width:  900px;
+	align-self: flex-start;
+}
+
+div .participation {
+	border: 1px dotted green;
+	width: 900px;
+	align-self: flex-end;
+}
+
+div .benefits {
+	border: 4px dotted yellow;
+	width: 900px;
+	align-self: center;
+}
+
+.requirements {
+	border: 4px dashed black;
+	width: 900px;
+
+}
+
+footer {
+	border: 8px dashed grey;
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	align-self: flex-end;
+
+}
+
+
+/*------------------------------------- 3rd section-- wrapper------------------------*/
+
+aside {
+	border: 4px dotted white;
+}
+
+.wrapper h3 {
+		color: white;
+}
+
+div .wrapper a {
+ text-decoration: none;
+}
+
+div .wrapper a:link {  /*: An unvisited link.*/
+	color: 	black;
+	}
+
+div .wrapper a:visited { /*A visited link.*/
+	color: rgb(153, 77, 0); /*burnt orange*/
+}
+
+div .wrapper a:hover {/*A link you're hovering your mouse over.*/
+	font-family: cursive;
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div .design-selection {
+	border: 1px solid purple;
+}
+
+div .design-archives {
+	border: 2px solid purple;
+}
+
+div .zen-resources {
+	border: 3px solid purple;
+}
+
+/*---------------------------------------xtra sections-------------------------------*/
+
+/*
+.extra1 {
+	width: 90px;
+	height: 90px;
+	background-color: green;
+}
+
+.extra2 {
+	width: 90px;
+	height: 90px;
+	background-color: white;
+}
+
+.extra3 {
+	width: 90px;
+	height: 90px;
+	background-color: red;
+
+.extra4 {
+	width: 90px;
+	height: 90px;
+	background-color: purple;
+}
+
+.extra5 {
+	width: 90px;
+	height: 90px;
+	background-color: grey;
+}
+
+.extra6 {
+	width: 90px;
+	height: 90px;
+	background-color: blue;
+}
+*/
+
+
+/*----------------------------------- override css for mobile browsers --------------*/
 @media all and (min-width:320px) and (max-width:400px) {
 	body {
 		font-size:1em;
 		background-color:orange;
 	}
-}
