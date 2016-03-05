@@ -47,6 +47,11 @@ section header { /*cornflower blue; CSS Zen Garden*/
   background-color:rgba(129, 129, 228, .25);
 	/*background-image:url(http://cdn.makeagif.com/media/2-19-2016/jy3coR.gif)*/;
 	background-position: center;
+	font-size: 2em;
+	font-family: georgia;
+	font-weight: bolder;
+	text-align: justify;
+	padding-left: 400px;
   /*float: right;
   margin-top: 175px;*/
 }
@@ -57,7 +62,7 @@ div .summary {  /*grey shadow and burnt red*/
   margin-left: 25px;*/
   font-size: 1.2em;
   color: #9d4828;
-  text-shadow: 3px 2px #a8aeac;
+  text-shadow: 1px 2px #a8aeac;
 	font-style: italic;
 	font-family: monospace;
 	border: 4px solid green;
@@ -65,18 +70,23 @@ div .summary {  /*grey shadow and burnt red*/
 
 div .preamble {
   color: rgb(228, 228, 129);/*yellow*/
+	background-color: orange;
+	padding: 5px;
 }
 
 
 /*---------------------------------second section-- main supporting-----------------*/
 
 div #zen-supporting {
-	background-color: rgba(64, 0, 128, .4);
-	padding:10px;
+	background-color: rgba(64, 0, 128, .3);
+	padding:15px;
 	margin: 25px;
+	margin-left: 115px;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
+	font-size: 1.2em;
+	width: 850px;
+	font-family: Georgia sans-serif;
 
 }
 
@@ -103,32 +113,37 @@ div .explanation {
 	border: 4px dotted pink;
 	width:  900px;
 	align-self: flex-start;
+	background-color: rgba(64, 0, 128, .3)
 }
 
 div .participation {
-	border: 1px dotted green;
+	border: 3px dotted green;
 	width: 900px;
 	align-self: flex-end;
+	background-color: rgba(64, 0, 128, .3)
 }
 
 div .benefits {
 	border: 4px dotted yellow;
 	width: 900px;
 	align-self: center;
+	background-color: rgba(64, 0, 128, .3)
 }
 
-.requirements {
+div .requirements {
 	border: 4px dashed black;
 	width: 900px;
+	background-color: rgba(64, 0, 128, .3)
 
 }
 
 footer {
 	border: 8px dashed grey;
 	display: flex;
-	flex-direction: column;
-	width: 900px;
-	align-self: flex-end;
+	flex-direction: row;
+	width: 510px;
+  align-self: justify;
+	padding-left: 300px;
 
 }
 
@@ -136,11 +151,20 @@ footer {
 /*------------------------------------- 3rd section-- wrapper------------------------*/
 
 aside {
-	border: 4px dotted white;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: justify;
+	padding-left: 460px;
+			width: 500px;
 }
 
 .wrapper h3 {
 		color: white;
+}
+
+.wrapper {
+		display: flex;
+		flex-direction: row;
 }
 
 div .wrapper a {
@@ -164,14 +188,17 @@ div .wrapper a:hover {/*A link you're hovering your mouse over.*/
 
 div .design-selection {
 	border: 1px solid purple;
+
 }
 
 div .design-archives {
 	border: 2px solid purple;
+
 }
 
 div .zen-resources {
 	border: 3px solid purple;
+
 }
 
 /*---------------------------------------xtra sections-------------------------------*/
@@ -219,4 +246,128 @@ div .zen-resources {
 	body {
 		font-size:1em;
 		background-color:orange;
+		width: 300px;
+	}
+
+	div #zen-supporting {
+		background-color: rgba(64, 0, 128, .3);
+		padding:15px;
+		margin: 25px;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2em;
+		width: 300px;
+		font-family: Georgia sans-serif;
+
+	}
+
+	div #zen-supporting a {
+	 text-decoration: none;
+	}
+
+	div #zen-supporting a:link {
+		color: 	rgb(115, 153, 0);/*green*/
+		}/*: An unvisited link.*/
+
+	div #zen-supporting a:visited { /*A visited link.*/
+		color: 	rgb(153, 0, 153); /*pink*/
+	}
+
+	div #zen-supporting a:hover {/*A link you're hovering your mouse over.*/
+		font-family: cursive;
+		color: 	rgb(153, 77, 0); /*burnt orange*/
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	div .explanation {
+		border: 4px dotted pink;
+		width:  300px;
+		align-self: flex-start;
+		background-color: rgba(64, 0, 128, .3)
+	}
+
+	div .participation {
+		border: 3px dotted green;
+		width: 300px;
+		align-self: flex-end;
+		background-color: rgba(64, 0, 128, .3)
+	}
+
+	div .benefits {
+		border: 4px dotted yellow;
+		width: 300px;
+		align-self: center;
+		background-color: rgba(64, 0, 128, .3)
+	}
+
+	div .requirements {
+		border: 4px dashed black;
+		width: 300px;
+		background-color: rgba(64, 0, 128, .3)
+
+	}
+
+	footer {
+		border: 8px dashed grey;
+		display: flex;
+		flex-direction: row;
+		width: 300px;
+	  align-self: center;
+
+	}
+
+
+	/*------------------------------------- 3rd section-- wrapper------------------------*/
+
+	aside {
+		border: 4px dotted white;
+		display: flex;
+		width: 300px;
+	}
+
+	.wrapper h3 {
+			color: white;
+	}
+
+	.wrapper {
+			display: flex;
+			flex-direction: column;
+	}
+
+	div .wrapper a {
+	 text-decoration: none;
+	}
+
+	div .wrapper a:link {  /*: An unvisited link.*/
+		color: 	black;
+		}
+
+	div .wrapper a:visited { /*A visited link.*/
+		color: rgb(153, 77, 0); /*burnt orange*/
+	}
+
+	div .wrapper a:hover {/*A link you're hovering your mouse over.*/
+		font-family: cursive;
+		color: red;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	div .design-selection {
+		border: 1px solid purple;
+		flex-direction: row;
+				width: 300px;
+	}
+
+	div .design-archives {
+		border: 2px solid purple;
+			flex-direction: column;
+					width: 300px;
+	}
+
+	div .zen-resources {
+		border: 3px solid purple;
+			flex-direction: row;
+					width: 300px;
 	}
