@@ -243,10 +243,44 @@ div .zen-resources {
 
 /*----------------------------------- override css for mobile browsers --------------*/
 @media all and (min-width:320px) and (max-width:400px) {
+
 	body {
 		font-size:1em;
 		background-color:orange;
 		width: 300px;
+	}
+
+	.intro {
+		border: 4px solid black;
+		width: 300px;
+	}
+
+
+	section header { /*cornflower blue; CSS Zen Garden*/
+	  background-color:rgba(129, 129, 228, .25);
+		/*background-image:url(http://cdn.makeagif.com/media/2-19-2016/jy3coR.gif)*/;
+		font-size: 1em;
+		font-family: monospace;
+		padding: 1px;
+
+	}
+
+	div .summary {  /*grey shadow and burnt red*/
+	  /*height: 50px;
+		width: 500px;
+	  margin-left: 25px;*/
+	  font-size: 1.2em;
+	  color: #9d4828;
+	  text-shadow: 1px 2px #a8aeac;
+		font-style: italic;
+		font-family: monospace;
+		border: 4px solid green;
+	}
+
+	div .preamble {
+	  color: rgb(228, 228, 129);/*yellow*/
+		background-color: orange;
+		padding: 5px;
 	}
 
 	div #zen-supporting {
@@ -308,22 +342,25 @@ div .zen-resources {
 
 	}
 
-	footer {
-		border: 8px dashed grey;
-		display: flex;
-		flex-direction: row;
-		width: 300px;
-	  align-self: center;
 
-	}
+		footer {
+			border: 8px dashed grey;
+			display: flex;
+			flex-direction: row;
+			width: 300px;
+			padding: 1px;
+
+		}
+
+
 
 
 	/*------------------------------------- 3rd section-- wrapper------------------------*/
 
 	aside {
-		border: 4px dotted white;
-		display: flex;
+
 		width: 300px;
+		padding: 1px;
 	}
 
 	.wrapper h3 {
@@ -333,25 +370,7 @@ div .zen-resources {
 	.wrapper {
 			display: flex;
 			flex-direction: column;
-	}
-
-	div .wrapper a {
-	 text-decoration: none;
-	}
-
-	div .wrapper a:link {  /*: An unvisited link.*/
-		color: 	black;
-		}
-
-	div .wrapper a:visited { /*A visited link.*/
-		color: rgb(153, 77, 0); /*burnt orange*/
-	}
-
-	div .wrapper a:hover {/*A link you're hovering your mouse over.*/
-		font-family: cursive;
-		color: red;
-		font-weight: bold;
-		text-decoration: none;
+			align-self: flex-start;
 	}
 
 	div .design-selection {
